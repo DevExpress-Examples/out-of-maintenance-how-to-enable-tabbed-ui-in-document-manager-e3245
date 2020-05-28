@@ -16,7 +16,7 @@ namespace DocumentManager_TabbedUI {
             }
         }
         void AddDocumentManager() {
-            DocumentManager manager = new DocumentManager();
+            DocumentManager manager = new DocumentManager(components);
             manager.MdiParent = this;
             manager.View = new TabbedView();
         }
